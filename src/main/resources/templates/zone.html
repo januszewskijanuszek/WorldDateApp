@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <meta charset="UTF-8">
+    <title>World Dates</title>
+    <link rel="stylesheet" href="../style.css?version=51" type="text/css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="title">
+            <div class="titleText">World Dates</div>
+        </div>
+        <div class="content">
+            <h3 th:text="${name}"></h3>
+            <tr>
+                <td th:text="${time.year}"></td>
+                ,
+                <td th:text="${time.month}"></td>
+                ,
+                <td th:text="${time.day}"></td>
+                |
+                <td th:text="${time.hour}"></td>
+                :
+                <td th:text="${time.min}"></td>
+            </tr>
+        </div>
+        <div class="footer">
+            <div class="footerDetails">
+                Patryk Januszewski <br>
+                git: <a href="https://github.com/januszewskijanuszek">januszewskijanuszek</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
